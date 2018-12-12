@@ -23,6 +23,8 @@ Places365, available at: http://places2.csail.mit.edu/download.html
 
 ## Training
 if we store the training data under directory ../places365
+
+To train the model:
 python train.py \
   --seed 100 \
   --dataset places365 \
@@ -33,3 +35,6 @@ python train.py \
   --lr 3e-4 \
   --label-smoothing 1
 ## Results
+
+## Reference
+K. Nazeri, E. Ng, and M. Ebrahimi. Image colorization usinggenerative adversarial networks. pages 85–94, 2018.
