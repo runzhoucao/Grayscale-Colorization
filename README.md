@@ -6,17 +6,30 @@ In this paper we present a model to automatically colorize black and white image
 Environment:
 - Python 2.7
 - Ubuntu 16.04
+- cuDNN v7.1.4 Runtime Library for Ubuntu16.04 (Deb)
+- cuDNN v7.1.4 Developer Library for Ubuntu16.04 (Deb)
 
 Packages:
 ```
 sudo apt-get install python-pip python-dev
-sudo pip install Scrapy
 sudo pip install tensorflow
 sudo pip install numpy
 sudo apt-get install libatlas-base-dev gfortran
 sudo pip install scipy
 sudo pip install -U scikit-learn
-sudo pip install matplotlib
-sudo pip install keras
-sudo pip install pandas
 ```
+Data:
+Places365, available at: http://places2.csail.mit.edu/download.html
+
+## Training
+if we store the training data under directory ../places365
+python train.py \
+  --seed 100 \
+  --dataset places365 \
+  --dataset-path ../ \
+  --checkpoints-path ./checkpoints \
+  --batch-size 64 \
+  --epochs 10 \
+  --lr 3e-4 \
+  --label-smoothing 1
+## Results
