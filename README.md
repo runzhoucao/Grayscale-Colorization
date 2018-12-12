@@ -1,5 +1,5 @@
 # Grayscale-Colorization
-In this paper we present a model to automatically colorize black and white images with zero human interference. Our objective is not to match the ground truth, but rather to generate plausible color images that can aesthetically fool a real human observer. Our attempts include implementing a Conditional Deep Convolutional Generative Adversarial Network \cite{nazeri2018image} as well as using the technique of transfer learning to infuse global features into the network from a pre-trained model \cite{IizukaSIGGRAPH2016, Torrey_transferlearning}. Our model is trained on publicly available dataset such as CIFAR-10 and Places365.
+In this paper we present a model to automatically colorize black and white images with zero human interference. Our objective is not to match the ground truth, but rather to generate plausible color images that can aesthetically fool a real human observer. Our attempts include implementing a Conditional Deep Convolutional Generative Adversarial Network as well as using the technique of transfer learning to infuse global features into the network from a pre-trained model . Our model is trained on publicly available dataset such as CIFAR-10 and Places365. 
 
 
 ## Dependencies
@@ -37,11 +37,5 @@ python train.py \
 ## Results
 
 ## Reference
-@article{nazeri2018image,
-  title={Image Colorization Using Generative Adversarial Networks},
-  author={Nazeri, Kamyar and Ng, Eric and Ebrahimi, Mehran},
-  booktitle={International Conference on Articulated Motion and Deformable Objects},
-  pages={85--94},
-  year={2018},
-  organization={Springer}
-}
+We adapted some utility functions and skeleton code from Nazeri et al.
+K. Nazeri, E. Ng, and M. Ebrahimi. Image colorization usinggenerative adversarial networks. pages 85–94, 2018.
