@@ -37,4 +37,11 @@ python train.py \
 ## Results
 
 ## Reference
-K. Nazeri, E. Ng, and M. Ebrahimi. Image colorization usinggenerative adversarial networks. pages 85–94, 2018.
+@article{nazeri2018image,
+  title={Image Colorization Using Generative Adversarial Networks},
+  author={Nazeri, Kamyar and Ng, Eric and Ebrahimi, Mehran},
+  booktitle={International Conference on Articulated Motion and Deformable Objects},
+  pages={85--94},
+  year={2018},
+  organization={Springer}
+}
